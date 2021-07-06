@@ -55,7 +55,7 @@ The T-Test performed on Lot 3 computed p-value equal to 0.041 and a mean of 1496
  
 # Study Design: Mecha Car vs Competition
  
-In coming up with the metrics I wanted to do a statistical analysis that could quantify how the MechaCar could perform against the competition, I really thought about what would be my top priorities as a consumer, if comparison shopping for the vehicles of the same class size/body. 
+In coming up with the metrics I wanted to do a statistical analysis that could quantify how the MechaCar could perform against the competition, I really thought about what would be my top three priorities as a consumer, if comparison-shopping for the vehicles of the same class size/body. The metrics with an asterisk * would be added or included in the study if a hybrid or electric vehicle would be compared.
 * cost
 * fuel economy (city and highway mpg)
 * safety rating
@@ -71,7 +71,7 @@ So that we would be able to compare the means for each metric across the differe
 
 To perform the test, we would need data of the MechaCar vehicle(s) and its competitors that are of the same vehicle size class OR for each vehicle size class. The data all gathered in a single dataframe where each metric is a column.
 
-<sup>*</sup> If I were the company I would also develop a hybrid and an electric car. If so, I would do a separate study (with the same methodology) that would also include the type of engine/motor used, lifespan of battery and the mpge(instead of mpg) as added metrics for consideration. The number of consumers purchasing hybrid and electric vehicles has steadily increased for the past few years especially with gasoline prices increasing and consumers becoming more aware of the carbon footprint of traditional cars. I think 
+<sup>*</sup> If I were the company I would also develop a hybrid and an electric car. If so, I would do a separate study (with the same methodology) that would also include the type of engine/motor used, lifespan of battery and the mpge(instead of mpg) as added metrics for consideration. The number of consumers purchasing hybrid and electric vehicles has steadily increased for the past few years especially with gasoline prices increasing and consumers becoming more aware of the carbon footprint of traditional cars. 
 
  
 
