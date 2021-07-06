@@ -15,38 +15,63 @@ The linear regression model produced a Y-Intercept of -1.040e+02 and slope coeff
 
 * The p-Value for this linear model is 5.35e-11, which is much smaller than the assumed significance level of 0.05%. It indicates that there is enough evidence to reject the null hypothesis; which also indcates that the slope of this linear model is not zero.
 
-* The r-squared value in this linear model is is 0.7149. This value tells us that this linear model can predict the fuel economy of the mechacar prototype about 71% of the time. It also means that there may or may not be other variables that could possibly contribute to the additional ~29% of variance that are not included in our model.
+* The r-squared value in this linear model is is 0.7149. This value tells us that this linear model can predict the fuel economy of the mechacar prototype about 71% of the time. It also means that there may or may not be other variables that could possibly contribute to the additional 29% of variance that are not included in our model.
 
 # Summary Statistics on Suspension Coils
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. The two separate summaries will look into the variance(s) of the suspension coils. 
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 lbs/in<sup>2<sup>. The two separate summaries will look into the variance(s) of the suspension coils. 
 
 ## Total Summary of all manufacturing lots
 ![total_summary](resources/total_summary.png)
 
-When studied or observed as a single group, we can see that there is a variance of 62.3 psi, which means that they suspension coild do not exceed the maximum value of 100 lbs/in^2
+When studied or observed as a single group, we can see that there is a variance of 62.29 psi. Based on this table we can say that the suspension coils do not exceed the maximum value of 100 lbs/in<sup>2<sup>.
 
 ## Summary Grouped by Manufacturing Lot
 ![lot_summary](resources/Lot_summary.png)
-Lot 3 is out of specs with a variance of 170.3 psi.On the lot level, Lot 1 and Lot 2 are into specs with respectively variances of 0.98 and 7.5 psi.
-
-When we look at the total summary table, we would say that as a whole the suspension coils are up to par with a variance of 62.29, and do not exceeed the maximum variance allowed by the design specifications of 100 lbs/sq in. However, when we look at the grouped tables by lot, we can see that production lot 3 almost doubles the maxiumum allowed variance with a value of 170.28. This one lot is skewing the total variance significantly, and suggests that the suspension coils produced in this lot have PSIs that are wildly inconsistent.
+This table tells us something slightly different. If we look at Lot 3, we can see that it has a variance of 170.3 psi, which exceeds the given specification of 100 lbs/in<sup>2<sup>. On the other hand, Lots 1 and 2 follow the given specification for the suspension coils. 
 
 # T-Test on Suspension Coils
 
 ## T-Test all manufacturing lots against the population mean
 ![all_lots](resources/all_lots.png)
-text here
+
+Based on this t-test, we can say that that the the PSI across all the manufacturing lots is statistically similar to the population mean of 1498.78, because the p-value is 0.06, which is larger than our significance level of 0.05.
+
+## T-Test each of the manufacturing lots against the population mean 
 
 ### Lot 1
 ![Lot1](resources/Lot1.png)
-text here
 
+The T-Test performed on Lot 1 computed a p-value equal to 1 and a mean of 1500. With a p-value of 1, we can say that Lot 1 is statistically similar to the population mean.
+ 
 ### Lot 2
 ![Lot2](resources/Lot2.png)
-text here
+
+The T-Test performed on Lot 2 computed p-value equal to 0.60 and a mean of 1500.2 . With a p-value higher that the significance level of 0.05, we can also assume that Lot 2 is statistically similar to the population mean.
 
 ### Lot 3
 ![Lot3](resources/Lot3.png)
-text here
 
-# Comparing the MechaCar to the Competition
+The T-Test performed on Lot 3 computed p-value equal to 0.041 and a mean of 1496.14. The p-value for Lot 3 is less than the significance level of 0.05, which suggests that Lot 3 is statistically different from the population mean.
+ 
+# Study Design: Mecha Car vs Competition
+ 
+In coming up with the metrics I wanted to do a statistical analysis that could quantify how the MechaCar could perform against the competition I thought about what consumers of the same demographic as I would consider if comparison shopping for the vehicles of the same class size/body. 
+* cost
+* fuel economy (city and highway mpg)
+* safety rating
+
+* engine/motor<sup>*<sup>
+* fuel economy<sup>*<sup> (miles per gallon of gasoline-equivalent)
+* battery lifespan, in terms of replacement<sup>*<sup> (usually measured in miles)
+
+In our study the null hypothesis would be: Each of the  performance metrics is statistically similar between the MechaCar prototype and all vehicle from the other manufacturers.
+
+To coduct the study, I would use a one-way ANOVA test, which is used to compare the means of a continuous numerical variable across a number of groups.
+So that we would be able to compare the means for each metric across the different manufacturers.
+
+To perform the test, we would need data of the MechaCar vehicle(s) and its competitors that are of the same vehicle size class OR for each vehicle size class. The data all gathered in a single dataframe where each metric is a column.
+
+<sup>*<sup> If I were the company I would also develop a hybrid and an electric car. If so, I would do a separate study (with the same methodology) that would also include the type of engine/motor used, lifespan of battery and the mpge(instead of mpg) as added metrics for consideration. The number of consumers purchasing hybrid and electric vehicles has steadily increased for the past few years especially with gasoline prices increasing and consumers becoming more aware of the carbon footprint of traditional cars. I think 
+
+ 
+
