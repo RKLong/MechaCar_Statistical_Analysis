@@ -13,7 +13,7 @@ The linear regression model produced a Y-Intercept of -1.040e+02 and slope coeff
 
 * The values in the last column of the summary, Pr((>|t|), represents the probability that each coefficient contributes a random amount of variance to the linear model. According to our results, vehicle length and ground clearance (including the intercept) are statistically unlikely to provide random amounts of variance to the linear model. In other words the vehicle length and ground clearance have a significant impact on the mechacar's fuel consumption or fuel economy, as measured in miles per gallon or mpg. These two variables have a significance level less than 0.05. On the other hand, the vehicle weight, spoiler angle, and drivetrain or AWD have p-Values that indicate a random amount of variance with the dataset.
 
-* The p-Value for this linear model is 5.35e-11, which is much smaller than the assumed significance level of 0.05%. It indicates that there is enough evidence to reject the null hypothesis; which also indcates that the slope of this linear model is not zero.
+* The p-value for this linear model is 5.35e-11, which is much smaller than the assumed significance level of 0.05. It indicates that there is enough evidence to reject the null hypothesis; which also indcates that the slope of this linear model is not zero.
 
 * The r-squared value in this linear model is is 0.7149. This value tells us that this linear model can predict the fuel economy of the mechacar prototype about 71% of the time. It also means that there may or may not be other variables that could possibly contribute to the additional 29% of variance that are not included in our model.
 
