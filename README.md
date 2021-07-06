@@ -11,7 +11,7 @@ The linear regression model produced a Y-Intercept of -1.040e+02 and slope coeff
 ## Multiple Regression Summary
 ![Stat_summary](resources/stat_summary.png)
 
-* The values in the last column of the summary, Pr((>|t|), represents the probability that each coefficient contributes a random amount of variance to the linear model. According to our results, vehicle length and ground clearance (including the intercept) are statistically unlikely to provide random amounts of variance to the linear model. In other words the vehicle length and ground clearance have a significant impact on the mechacar's fuel consumption or fuel economy, as measured in miles per gallon or mpg. These two variables have a significance level less than 0.05. On the other hand, the vehicle weight, spoiler angle, and drivetrain or AWD have p-Values that indicate a random amount of variance with the dataset.
+* The values in the last column of the summary, Pr((>|t|), represents the probability that each coefficient contributes a random amount of variance to the linear model. According to our results, vehicle length and ground clearance (including the intercept) are statistically unlikely to provide random amounts of variance to the linear model. In other words the vehicle length and ground clearance have a significant impact on the mechacar's fuel consumption or fuel economy, as measured in miles per gallon or mpg. These two variables have a significance level less than 0.05. On the other hand, the vehicle weight, spoiler angle, and drivetrain or AWD have p-values that indicate a random amount of variance with the dataset.
 
 * The p-value for this linear model is 5.35e-11, which is much smaller than the assumed significance level of 0.05. It indicates that there is enough evidence to reject the null hypothesis; which also indcates that the slope of this linear model is not zero.
 
@@ -27,7 +27,7 @@ When studied or observed as a single group, we can see that there is a variance 
 
 ## Summary Grouped by Manufacturing Lot
 ![lot_summary](resources/Lot_summary.png)
-This table tells us something slightly different. If we look at Lot 3, we can see that it has a variance of 170.3 psi, which exceeds the given specification of 100 lbs/in<sup>2</sup>. On the other hand, Lots 1 and 2 follow the given specification for the suspension coils. 
+This table tells us something slightly different. If we look at Lot 3, we can see that it has a variance of 170.28 psi, which exceeds the given specification of 100 lbs/in<sup>2</sup>. On the other hand, Lots 1 and 2 follow the given specification for the suspension coils. 
 
 # T-Test on Suspension Coils
 
@@ -73,5 +73,5 @@ To perform the test, we would need data of the MechaCar vehicle(s) and its compe
 
 <sup>*</sup> If I were the company I would also develop a hybrid and an electric car. If so, I would do a separate study (with the same methodology) that would also include the type of engine/motor used, lifespan of battery and the mpge(instead of mpg) as added metrics for consideration. The number of consumers purchasing hybrid and electric vehicles has steadily increased for the past few years especially with gasoline prices increasing and consumers becoming more aware of the carbon footprint of traditional cars. 
 
- NOTE: The numerical values in the analysis have not been rounded off since there were no specific guidelines se, instead I kept two significant figures to the right of the decimal point and dropped the rest.
+NOTE: The numerical values in the analysis have not been rounded off since there were no specific guidelines set, instead I kept two significant figures to the right of the decimal point and dropped the rest.
 
