@@ -4,7 +4,7 @@ UCB Challenge: Using statistics and hypothesis testing to statistics and hypothe
 # Linear Regression to Predict MPG
 ![linearregression](resources/linearregression.png)
 text
-![Stat_summary](resources/stat_summary)
+![Stat_summary](resources/stat_summary.png)
 text
 
 # Summary Statistics on Suspension Coils
