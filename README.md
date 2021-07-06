@@ -18,7 +18,7 @@ The linear regression model produced a Y-Intercept of -1.040e+02 and slope coeff
 * The r-squared value in this linear model is is 0.7149. This value tells us that this linear model can predict the fuel economy of the mechacar prototype about 71% of the time. It also means that there may or may not be other variables that could possibly contribute to the additional 29% of variance that are not included in our model.
 
 # Summary Statistics on Suspension Coils
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 lbs/in<sup>2<sup>. The two separate summaries will look into the variance(s) of the suspension coils. 
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 lbs/in<sup>2. The two separate summaries will look into the variance(s) of the suspension coils. 
 
 ## Total Summary of all manufacturing lots
 ![total_summary](resources/total_summary.png)
