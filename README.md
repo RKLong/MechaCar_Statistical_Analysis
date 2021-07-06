@@ -18,7 +18,7 @@ The linear regression model produced a Y-Intercept of -1.040e+02 and slope coeff
 * The r-squared value in this linear model is is 0.7149. This value tells us that this linear model can predict the fuel economy of the mechacar prototype about 71% of the time. It also means that there may or may not be other variables that could possibly contribute to the additional 29% of variance that are not included in our model.
 
 # Summary Statistics on Suspension Coils
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 lbs/in</sup>2. The two separate summaries will look into the variance(s) of the suspension coils. 
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 lbs/in<sup>2</sup> or psi. The two separate summaries will look into the variance(s) of the suspension coils. 
 
 ## Total Summary of all manufacturing lots
 ![total_summary](resources/total_summary.png)
@@ -27,7 +27,7 @@ When studied or observed as a single group, we can see that there is a variance 
 
 ## Summary Grouped by Manufacturing Lot
 ![lot_summary](resources/Lot_summary.png)
-This table tells us something slightly different. If we look at Lot 3, we can see that it has a variance of 170.3 psi, which exceeds the given specification of 100 lbs/in<sup>2<sup>. On the other hand, Lots 1 and 2 follow the given specification for the suspension coils. 
+This table tells us something slightly different. If we look at Lot 3, we can see that it has a variance of 170.3 psi, which exceeds the given specification of 100 lbs/in<sup>2</sup>. On the other hand, Lots 1 and 2 follow the given specification for the suspension coils. 
 
 # T-Test on Suspension Coils
 
@@ -55,14 +55,14 @@ The T-Test performed on Lot 3 computed p-value equal to 0.041 and a mean of 1496
  
 # Study Design: Mecha Car vs Competition
  
-In coming up with the metrics I wanted to do a statistical analysis that could quantify how the MechaCar could perform against the competition I thought about what consumers of the same demographic as I would consider if comparison shopping for the vehicles of the same class size/body. 
+In coming up with the metrics I wanted to do a statistical analysis that could quantify how the MechaCar could perform against the competition, I really thought about what would be my top priorities as a consumer, if comparison shopping for the vehicles of the same class size/body. 
 * cost
 * fuel economy (city and highway mpg)
 * safety rating
 
-* engine/motor<sup>*<sup>
-* fuel economy<sup>*<sup> (miles per gallon of gasoline-equivalent)
-* battery lifespan, in terms of replacement<sup>*<sup> (usually measured in miles)
+* engine/motor<sup>*</sup>
+* fuel economy<sup>*</sup> (miles per gallon of gasoline-equivalent)
+* battery lifespan, in terms of replacement<sup>*</sup> (usually measured in miles)
 
 In our study the null hypothesis would be: Each of the  performance metrics is statistically similar between the MechaCar prototype and all vehicle from the other manufacturers.
 
@@ -71,7 +71,7 @@ So that we would be able to compare the means for each metric across the differe
 
 To perform the test, we would need data of the MechaCar vehicle(s) and its competitors that are of the same vehicle size class OR for each vehicle size class. The data all gathered in a single dataframe where each metric is a column.
 
-<sup>*<sup> If I were the company I would also develop a hybrid and an electric car. If so, I would do a separate study (with the same methodology) that would also include the type of engine/motor used, lifespan of battery and the mpge(instead of mpg) as added metrics for consideration. The number of consumers purchasing hybrid and electric vehicles has steadily increased for the past few years especially with gasoline prices increasing and consumers becoming more aware of the carbon footprint of traditional cars. I think 
+<sup>*</sup> If I were the company I would also develop a hybrid and an electric car. If so, I would do a separate study (with the same methodology) that would also include the type of engine/motor used, lifespan of battery and the mpge(instead of mpg) as added metrics for consideration. The number of consumers purchasing hybrid and electric vehicles has steadily increased for the past few years especially with gasoline prices increasing and consumers becoming more aware of the carbon footprint of traditional cars. I think 
 
  
 
