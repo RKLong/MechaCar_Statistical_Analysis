@@ -71,7 +71,8 @@ So that we would be able to compare the means for each metric across the differe
 
 To perform the test, we would need data of the MechaCar vehicle(s) and its competitors that are of the same vehicle size class OR for each vehicle size class. The data all gathered in a single dataframe where each metric is a column.
 
-<sup>*</sup> If I were the company I would also develop a hybrid and an electric car. If so, I would do a separate study (with the same methodology) that would also include the type of engine/motor used, lifespan of battery and the mpge(instead of mpg) as added metrics for consideration. The number of consumers purchasing hybrid and electric vehicles has steadily increased for the past few years especially with gasoline prices increasing and consumers becoming more aware of the carbon footprint of traditional cars. 
+<sup>*</sup> The number of consumers purchasing hybrid and electric vehicles has steadily increased for the past few years especially with gasoline prices increasing and consumers becoming more aware of the carbon footprint of traditional cars and If I were the company, I would also develop a hybrid and an electric car. If so, I would do a separate study (with the same methodology) that would also include the type of engine/motor used, lifespan of battery and the mpge(instead of mpg) as added metrics for consideration. 
+
 
 NOTE: The numerical values in the analysis have not been rounded off since there were no specific guidelines set, instead I kept two significant figures to the right of the decimal point and dropped the rest.
 
